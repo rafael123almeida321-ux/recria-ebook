@@ -136,6 +136,29 @@ nav .btn{padding:11px 22px;font-size:14px}
 .proj-money .sale{color:var(--terra)}
 .proj-money .arrow{color:var(--sage);font-weight:700}
 
+
+/* step by step */
+.howto{background:var(--paper)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:34px 0 30px}
+.tab{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px 8px 10px;font:500 13.5px 'Poppins';color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:8px;transition:all .2s}
+.tab img{width:26px;height:26px}
+.tab:hover{border-color:var(--leaf);color:var(--green)}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:var(--paper)}
+.howto-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:18px;flex-wrap:wrap}
+.howto-head h3{font-size:28px;color:var(--green)}
+.howto-head .meta{display:flex;gap:8px;flex-wrap:wrap}
+.howto-head .meta span{font-size:13px;background:var(--cream);padding:6px 12px;border-radius:999px;color:var(--muted)}
+.steps-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.stepc{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;opacity:0;transform:translateY(12px);animation:stin .45s ease forwards}
+.stepc img{width:100%;aspect-ratio:16/10;display:block}
+.stepc div{padding:12px 14px 16px;display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45}
+.stepc b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px}
+@keyframes stin{to{opacity:1;transform:none}}
+.howto-note{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px;background:var(--cream);border-radius:var(--r);padding:20px 26px}
+.howto-note p{color:var(--muted);font-size:15px;max-width:640px}
+@media (max-width:980px){.steps-row{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.steps-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;gap:12px;padding-bottom:8px;margin:0 -20px;padding-left:20px;padding-right:20px}.stepc{flex:0 0 76%;scroll-snap-align:start}.tab{padding:8px 12px;font-size:13px}.tab span{display:none}.tab img{width:30px;height:30px}}
+
 /* inside */
 .inside .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
 .peek{position:relative;height:500px}
@@ -268,7 +291,7 @@ footer .brand{color:var(--paper)}
 <nav id="nav">
   <div class="wrap">
     <a class="brand" href="#topo"><img src="assets/logo-mark.svg" alt="">Recria</a>
-    <div class="nav-links"><a href="#sustentavel">Por que é sustentável</a><a href="#projetos">Projetos</a><a href="#renda">Renda extra</a><a href="#faq">Dúvidas</a></div>
+    <div class="nav-links"><a href="#sustentavel">Por que é sustentável</a><a href="#projetos">Projetos</a><a href="#por-dentro">Por dentro</a><a href="#renda">Renda extra</a><a href="#faq">Dúvidas</a></div>
     <button class="btn btn-buy js-buy">Comprar agora</button>
   </div>
 </nav>
@@ -284,7 +307,7 @@ footer .brand{color:var(--paper)}
           <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button>
         <span class="price-tag">por apenas <b>R$ 19,90</b></span>
       </div>
-      <div class="hero-proof"><span>8 projetos ilustrados</span><span>3 bônus exclusivos</span><span>Acesso imediato em PDF</span></div>
+      <div class="hero-proof"><span>Passo a passo ilustrado</span><span>3 bônus exclusivos</span><span>Acesso imediato em PDF</span></div>
     </div>
     <div class="hero-visual" aria-hidden="true">
       <div class="hero-blob"></div>
@@ -293,7 +316,7 @@ footer .brand{color:var(--paper)}
       <img class="float-illu fi3" src="assets/p3-pote-vidro.svg" alt="">
       <img class="float-illu fi4" src="assets/p6-caixa-presente.svg" alt="">
       <img class="book" src="assets/capa-ebook.jpg" alt="Capa do e-book Recria">
-      <span class="badge">25 páginas</span>
+      <span class="badge">33 páginas</span>
     </div>
   </div>
 </header>
@@ -444,6 +467,21 @@ footer .brand{color:var(--paper)}
   </div>
 </section>
 
+
+<section class="howto" id="por-dentro">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Por dentro do e-book</span>
+      <h2>Cada etapa <em>ilustrada</em>: o que cortar, colar e montar</h2>
+      <p class="lead" style="margin-top:14px">Nada de texto confuso. Todo projeto tem uma página de passo a passo ilustrado. Escolha um projeto e veja como é:</p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs"><button class="tab" role="tab" aria-selected="false"><img src="assets/p1-organizador.svg" alt=""><span>Organizador</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p2-vaso-pet.svg" alt=""><span>Vaso PET</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p3-pote-vidro.svg" alt=""><span>Pote de vidro</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p4-sacola.svg" alt=""><span>Sacola</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p5-porta-copos.svg" alt=""><span>Porta-copos</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p6-caixa-presente.svg" alt=""><span>Caixa</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p7-lata.svg" alt=""><span>Porta-lápis</span></button><button class="tab" role="tab" aria-selected="false"><img src="assets/p8-painel.svg" alt=""><span>Painel</span></button></div>
+    <div class="howto-head"><h3 id="ht-title"></h3><div class="meta" id="ht-meta"></div></div>
+    <div class="steps-row" id="ht-steps"></div>
+    <div class="howto-note reveal"><p><b style="color:var(--green)">É exatamente assim no PDF:</b> página de ficha com materiais, custo e preço + página de passo a passo ilustrado, para os 8 projetos.</p><button class="btn btn-buy js-buy">Quero ver todos os projetos</button></div>
+  </div>
+</section>
+
 <section class="inside">
   <div class="wrap">
     <div class="peek reveal" aria-hidden="true">
@@ -456,7 +494,7 @@ footer .brand{color:var(--paper)}
       <h2>Bonito de ver, <em>fácil</em> de seguir</h2>
       <ul class="checklist">
         <li>Ilustrações próprias e páginas organizadas — nada de texto corrido</li>
-        <li>Passo a passo numerado em 5 etapas por projeto</li>
+        <li>Passo a passo ilustrado: cada etapa com desenho do que cortar, colar e montar</li>
         <li>Orientações de segurança e acabamento profissional</li>
         <li>Guia de como precificar e onde vender suas peças</li>
         <li>Ideias de kits prontos para presentes e feiras</li>
@@ -521,7 +559,7 @@ footer .brand{color:var(--paper)}
         <span class="eyebrow">Oferta de lançamento</span>
         <h2>Leve o Recria completo</h2>
         <ul class="stack">
-          <li><span>E-book com 8 projetos ilustrados</span><span>25 páginas</span></li>
+          <li><span>E-book com 8 projetos e passo a passo ilustrado</span><span>33 páginas</span></li>
           <li><span>Bônus 1 — Guia de materiais</span><span>incluso</span></li>
           <li><span>Bônus 2 — Moldes e medidas</span><span>incluso</span></li>
           <li><span>Bônus 3 — Ficha de preço artesanal</span><span>incluso</span></li>
@@ -601,6 +639,20 @@ footer .brand{color:var(--paper)}
     if(navigator.clipboard){ navigator.clipboard.writeText(pdf).then(done, function(){ prompt('Copie o link:', pdf); }); }
     else { prompt('Copie o link:', pdf); }
   });
+
+  // passo a passo interativo
+  var STEPS = [{"n": "01", "t": "Organizador de mesa sustentável", "d": "Fácil", "tm": "40–60 min", "c": "R$ 2–8", "v": "R$ 12–25", "s": ["Recorte uma base retangular de papelão.", "Monte divisórias de diferentes alturas.", "Cole as divisórias na base e reforce os cantos.", "Cubra com papel kraft ou retalhos de papel decorativo.", "Deixe secar completamente antes de usar."]}, {"n": "02", "t": "Vaso feito de garrafa PET", "d": "Fácil", "tm": "20–30 min", "c": "R$ 2–7", "v": "R$ 8–18", "s": ["Marque a altura desejada para o vaso.", "Peça ajuda a um adulto para fazer o corte, se necessário, e lixe ou proteja cuidadosamente as bordas.", "Faça pequenos furos de drenagem no fundo.", "Decore a parte externa com pintura adequada.", "Adicione terra e plante uma muda."]}, {"n": "03", "t": "Pote organizador decorativo", "d": "Fácil", "tm": "15–25 min", "c": "R$ 2–6", "v": "R$ 10–20", "s": ["Lave e seque o pote.", "Retire rótulos e resíduos de cola.", "Envolva a parte externa com barbante ou tecido.", "Finalize com uma etiqueta feita de papel reaproveitado.", "Use para guardar lápis, pincéis ou pequenos objetos."]}, {"n": "04", "t": "Sacola reutilizável de camiseta", "d": "Fácil", "tm": "20–35 min", "c": "R$ 0–5*", "v": "R$ 10–22", "s": ["Estenda a camiseta sobre uma superfície plana.", "Corte as mangas e amplie a abertura do pescoço.", "Marque uma faixa na parte inferior.", "Faça franjas e amarre os pares de tiras firmemente.", "Vire a sacola do avesso para esconder os nós e confira a resistência antes de usar."]}, {"n": "05", "t": "Porta-copos de retalhos", "d": "Fácil a média", "tm": "30–45 min", "c": "R$ 2–6 / un.", "v": "R$ 6–12 / un.", "s": ["Corte quadrados do mesmo tamanho.", "Una os retalhos formando um desenho.", "Coloque uma base mais grossa por baixo.", "Costure as camadas e apare as sobras.", "Confira as bordas e a estabilidade da peça."]}, {"n": "06", "t": "Caixa de presente personalizada", "d": "Fácil a média", "tm": "30–50 min", "c": "R$ 2–6", "v": "R$ 10–22", "s": ["Defina as medidas da base e da tampa.", "Desenhe as abas laterais e as linhas de dobra.", "Recorte e dobre as partes.", "Cole as abas e aguarde a secagem.", "Decore com papel reutilizado e uma etiqueta artesanal."]}, {"n": "07", "t": "Porta-lápis de lata reaproveitada", "d": "Fácil", "tm": "20–35 min", "c": "R$ 2–6", "v": "R$ 10–20", "s": ["Escolha uma lata sem ferrugem ou deformações.", "Verifique se a borda não está cortante; utilize apenas uma lata com borda segura.", "Envolva a parte externa com tecido ou barbante.", "Fixe a decoração com cola.", "Deixe secar e teste a estabilidade."]}, {"n": "08", "t": "Painel decorativo de papelão", "d": "Fácil", "tm": "40–60 min", "c": "R$ 2–8", "v": "R$ 15–35", "s": ["Achate levemente os rolos.", "Corte tiras de largura semelhante.", "Curve as tiras para formar pétalas ou figuras geométricas.", "Organize o desenho antes de colar.", "Fixe as peças na base e aguarde a secagem."]}];
+  var tabsEl = document.getElementById('tabs'), row = document.getElementById('ht-steps');
+  function show(i){
+    var p = STEPS[i];
+    tabsEl.querySelectorAll('.tab').forEach(function(t,k){ t.setAttribute('aria-selected', k===i ? 'true':'false'); });
+    document.getElementById('ht-title').textContent = 'Projeto ' + p.n + ' · ' + p.t;
+    document.getElementById('ht-meta').innerHTML = '<span>'+p.d+'</span><span>'+p.tm+'</span><span>Custo '+p.c+'</span><span>Venda '+p.v+'</span>';
+    row.innerHTML = p.s.map(function(txt,k){ return '<article class="stepc" style="animation-delay:'+(k*70)+'ms"><img src="assets/steps/p'+(i+1)+'-'+(k+1)+'.svg" alt="Etapa '+(k+1)+': '+txt.replace(/"/g,'')+'"><div><b>'+(k+1)+'</b><span>'+txt+'</span></div></article>'; }).join('');
+  }
+  tabsEl.querySelectorAll('.tab').forEach(function(t,k){ t.addEventListener('click', function(){ show(k); }); });
+  show(1);
+
   if(location.hash==='#comprado') open();
   // nav border + reveal
   var nav = document.getElementById('nav');
