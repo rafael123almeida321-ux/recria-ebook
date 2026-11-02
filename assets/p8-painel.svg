@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Painel decorativo de rolos de papelão">
+  <circle cx="200" cy="205" r="170" fill="#F5E2B8"/>
+  <!-- nail + string -->
+  <circle cx="200" cy="50" r="5" fill="#1E2722"/>
+  <path d="M200 50 L118 96 M200 50 L282 96" stroke="#9C7A4A" stroke-width="2.5"/>
+  <!-- frame board -->
+  <rect x="88" y="92" width="224" height="252" rx="10" fill="#1F4D3A"/>
+  <rect x="100" y="104" width="200" height="228" rx="6" fill="#2E6447"/>
+  <!-- big flower made of roll strips (petal loops) -->
+  <g transform="translate(200 200)" fill="none" stroke="#D9B98C" stroke-width="7">
+    <ellipse rx="16" ry="42" transform="rotate(0) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(45) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(90) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(135) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(180) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(225) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(270) translate(0 -44)"/>
+    <ellipse rx="16" ry="42" transform="rotate(315) translate(0 -44)"/>
+  </g>
+  <circle cx="200" cy="200" r="14" fill="#E3A93C"/>
+  <!-- small flowers -->
+  <g transform="translate(140 290)" fill="none" stroke="#C65D3B" stroke-width="5">
+    <ellipse rx="7" ry="16" transform="translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(72) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(144) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(216) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(288) translate(0 -16)"/>
+  </g>
+  <g transform="translate(262 290)" fill="none" stroke="#E3A93C" stroke-width="5">
+    <ellipse rx="7" ry="16" transform="translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(72) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(144) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(216) translate(0 -16)"/><ellipse rx="7" ry="16" transform="rotate(288) translate(0 -16)"/>
+  </g>
+  <g transform="translate(140 132)" fill="none" stroke="#A8C3A0" stroke-width="4">
+    <ellipse rx="6" ry="12" transform="translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(90) translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(180) translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(270) translate(0 -12)"/>
+  </g>
+  <g transform="translate(262 132)" fill="none" stroke="#A8C3A0" stroke-width="4">
+    <ellipse rx="6" ry="12" transform="translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(90) translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(180) translate(0 -12)"/><ellipse rx="6" ry="12" transform="rotate(270) translate(0 -12)"/>
+  </g>
+  <!-- loose roll -->
+  <g transform="translate(330 330)">
+    <rect x="-18" y="-34" width="36" height="58" rx="4" fill="#D9B98C"/>
+    <ellipse cx="0" cy="-34" rx="18" ry="7" fill="#B8925E"/>
+    <ellipse cx="0" cy="-34" rx="11" ry="4" fill="#8A6B3F"/>
+  </g>
+</svg>

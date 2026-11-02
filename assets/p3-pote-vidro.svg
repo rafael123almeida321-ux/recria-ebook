@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pote de vidro decorado com barbante">
+  <circle cx="200" cy="205" r="170" fill="#F5E2B8"/>
+  <ellipse cx="200" cy="334" rx="120" ry="12" fill="#1E2722" opacity=".10"/>
+  <!-- brushes -->
+  <rect x="160" y="70" width="10" height="120" rx="4" fill="#C65D3B" transform="rotate(-12 165 130)"/>
+  <path d="M152 66 q8 -26 16 0 z" fill="#1E2722" transform="rotate(-12 165 130)"/>
+  <rect x="194" y="58" width="10" height="130" rx="4" fill="#1F4D3A"/>
+  <path d="M190 58 q9 -30 18 0 z" fill="#E3A93C"/>
+  <rect x="226" y="76" width="10" height="114" rx="4" fill="#E3A93C" transform="rotate(14 231 133)"/>
+  <path d="M222 76 q9 -22 18 0 z" fill="#3E7D5A" transform="rotate(14 231 133)"/>
+  <!-- jar glass -->
+  <path d="M132 150 L268 150 L274 176 C282 186 286 200 286 214 L286 306 C286 324 272 336 254 336 L146 336 C128 336 114 324 114 306 L114 214 C114 200 118 186 126 176 Z" fill="#DCEDEA" opacity=".9"/>
+  <path d="M140 196 L140 304" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <!-- rim -->
+  <rect x="128" y="140" width="144" height="22" rx="6" fill="#B9D3CF"/>
+  <!-- twine wrap -->
+  <g stroke="#B8925E" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M114 236 Q200 246 286 236"/>
+    <path d="M114 248 Q200 258 286 248"/>
+    <path d="M114 260 Q200 270 286 260"/>
+    <path d="M114 272 Q200 282 286 272"/>
+    <path d="M114 284 Q200 294 286 284"/>
+  </g>
+  <g stroke="#9C7A4A" stroke-width="2" opacity=".6">
+    <path d="M114 242 Q200 252 286 242" fill="none"/><path d="M114 266 Q200 276 286 266" fill="none"/><path d="M114 290 Q200 300 286 290" fill="none"/>
+  </g>
+  <!-- tag -->
+  <path d="M232 196 L232 232" stroke="#9C7A4A" stroke-width="2"/>
+  <path d="M212 300 L252 300 L262 316 L252 332 L212 332 Z" fill="#FBF7F0" transform="translate(0 -70)"/>
+  <circle cx="254" cy="246" r="3" fill="#B8925E"/>
+  <line x1="220" y1="240" x2="244" y2="240" stroke="#3E7D5A" stroke-width="3" stroke-linecap="round"/>
+  <line x1="220" y1="250" x2="238" y2="250" stroke="#3E7D5A" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  <!-- leaf sprig -->
+  <path d="M300 312 C320 290 334 284 350 286 C344 304 326 314 300 312 Z" fill="#3E7D5A"/>
+  <path d="M300 320 C312 300 316 280 312 262 C298 276 294 300 300 320 Z" fill="#A8C3A0"/>
+</svg>

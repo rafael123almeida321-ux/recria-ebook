@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Porta-copos de retalhos com caneca">
+  <circle cx="200" cy="205" r="170" fill="#F3D6CF"/>
+  <!-- stacked coasters -->
+  <g transform="translate(70 238) rotate(-10)">
+    <rect width="130" height="130" rx="12" fill="#B8925E"/>
+    <rect x="8" y="8" width="57" height="57" rx="4" fill="#E3A93C"/><rect x="65" y="8" width="57" height="57" rx="4" fill="#1F4D3A"/>
+    <rect x="8" y="65" width="57" height="57" rx="4" fill="#3E7D5A"/><rect x="65" y="65" width="57" height="57" rx="4" fill="#C65D3B"/>
+    <g stroke="#FBF7F0" stroke-width="2.5" stroke-dasharray="6 5" fill="none"><rect x="6" y="6" width="118" height="118" rx="8"/><line x1="65" y1="8" x2="65" y2="122"/><line x1="8" y1="65" x2="122" y2="65"/></g>
+  </g>
+  <g transform="translate(200 120) rotate(8)">
+    <rect width="130" height="130" rx="12" fill="#9C7A4A"/>
+    <rect x="8" y="8" width="57" height="57" rx="4" fill="#C65D3B"/><rect x="65" y="8" width="57" height="57" rx="4" fill="#F0C27A"/>
+    <rect x="8" y="65" width="57" height="57" rx="4" fill="#A8C3A0"/><rect x="65" y="65" width="57" height="57" rx="4" fill="#1F4D3A"/>
+    <circle cx="36" cy="36" r="8" fill="#FBF7F0" opacity=".6"/><circle cx="94" cy="94" r="8" fill="#FBF7F0" opacity=".5"/>
+    <g stroke="#FBF7F0" stroke-width="2.5" stroke-dasharray="6 5" fill="none"><rect x="6" y="6" width="118" height="118" rx="8"/><line x1="65" y1="8" x2="65" y2="122"/><line x1="8" y1="65" x2="122" y2="65"/></g>
+  </g>
+  <!-- mug on coaster -->
+  <ellipse cx="266" cy="232" rx="44" ry="10" fill="#1E2722" opacity=".15"/>
+  <path d="M224 150 L304 150 L300 224 C300 232 294 236 286 236 L242 236 C234 236 228 232 228 224 Z" fill="#FBF7F0"/>
+  <path d="M302 166 C330 166 332 210 300 210" stroke="#FBF7F0" stroke-width="10" fill="none"/>
+  <ellipse cx="264" cy="150" rx="40" ry="8" fill="#6B4A33"/>
+  <path d="M250 136 q-8 -14 0 -26 q8 -12 0 -24" stroke="#FBF7F0" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M272 132 q-8 -12 0 -22" stroke="#FBF7F0" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/>
+  <rect x="236" y="176" width="56" height="10" rx="5" fill="#3E7D5A"/>
+  <!-- needle & thread -->
+  <path d="M82 120 C120 90 150 160 190 110" stroke="#C65D3B" stroke-width="3" fill="none" stroke-dasharray="2 0"/>
+  <line x1="66" y1="132" x2="96" y2="104" stroke="#6E7B74" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="94" cy="106" rx="3" ry="6" fill="none" stroke="#6E7B74" stroke-width="2" transform="rotate(45 94 106)"/>
+</svg>
